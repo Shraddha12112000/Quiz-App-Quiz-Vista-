@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--Know browser that it is html file document-->
+<!--this is empty tags that means self closing or void tags because they dont have a corresponding closing tag. for example- <hr>,<img>,<input>,<link>,<meta>,<br>-->
+<!--Container tags consist of opening tag+content+closing tag.
+    Empty elements are used to insert the content
+Empty tags can be used inside the container tags.-->
+<html lang="en">
+    <head>
+        <!--This tag will hold all the meta information like, keyword of the webpage, title of the webpage,charset and language. This meta information can only be read by browser like , content, keyword,size of webpage-->
+        <title>Quiz Vista By Vidyadeep Classes</title>
+        <!--meta tag defines metadata about html document Metadata is information about data. this tag always go inside head element , used to specify character set, page description,keywords,author,viewport Setting. Metadata will not be displayed on page,but is machine +parsable.Metadata is used by browsers , search engines,other web services.
+        <meta charset="utf-8">
+        <meta name="description" content="Free Quizzes On English Grammar">
+        <meta name="keywords" content="English,English Quiz, English Grammar,Prepositions, Tenses, Mixed Grammar Quiz,English Grammar Quiz,Quiz by Vidyadeep Classes, Vidyadeep Classes">
+        <meta name="author" content="Shraddha Manoj Gujar">
+        <!--To see webpage same as on mobile,laptop(responsive)-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <div id="quiz">
+            <header>
+                <h1 id="h1">English Grammar Quiz</h1>
+
+            </header>
+            <div id="tracker">
+                <div class="num" id="no1">1</div>
+                <div class="num" id="no2">2</div>
+                <div class="num" id="no3">3</div>
+                <div class="num" id="no4">4</div>
+                <div class="num" id="no5">5</div>
+                <div class="num" id="no6">6</div>
+                <div class="num" id="no7">7</div>
+                <div class="num" id="no8">8</div>
+                <div class="num" id="no9">9</div>
+                <div class="num" id="no10">10</div>
+                
+            </div>
+            <hr style="margin-bottom: 20px;">
+            <div id="quizSet">
+                <p id="question">Question 1) She ____ going to office.</p>
+                <div id="options" class="options">
+                    <button id="btn1" class="button"><span id="option1">is</span></button>
+                    <button id="btn2" class="button"><span id="option2">do</span></button>
+                    <button id="btn3" class="button"><span id="option3">has</span></button>
+                    <button id="btn4" class="button"><span id="option4">had been</span></button>
+
+                </div>
+                <button id="submit">Next Question</button>
+
+
+            </div>
+            <div id="resultBox">
+                <p id="result"></p>
+                <button id="retake">Retake Test</button>
+            </div>
+            <hr style="margin-top: 30px;">
+            <footer>
+                <p id="progress">Question 1 of 10</p>
+                <div id="timer">timer</div>
+            </footer>
+        </div>
+        <div id="info">
+            created by @VidyadeepClasses 
+            <div id="contact">
+                Email: vidyadeepclasses0@gmail.com   
+                mobile: 7219597653 Youtube: <a href="https://youtube.com/@VidyadeepClasses">@VidyadeepClasses</a>
+                
+            </div>
+        </div>
+        <script src="questions.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
